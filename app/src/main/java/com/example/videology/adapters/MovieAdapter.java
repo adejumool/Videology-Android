@@ -2,6 +2,7 @@ package com.example.videology.adapters;
 
 import android.content.Context;
 import android.content.Intent;
+import android.os.Parcelable;
 import android.text.Layout;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -19,6 +20,8 @@ import com.bumptech.glide.Glide;
 import com.example.videology.R;
 import com.example.videology.models.DetailActivity;
 import com.example.videology.models.Movie;
+
+import org.parceler.Parcels;
 
 import java.util.List;
 
@@ -77,6 +80,7 @@ public class MovieAdapter extends RecyclerView.Adapter<MovieAdapter.ViewHolder>{
                 public void onClick(View v) {
                     Toast.makeText(context, movie.getTitle(), Toast.LENGTH_SHORT).show();
                     Intent i = new Intent(context, DetailActivity.class);
+                    i.putExtra("movie", Parcels.wrap(movie));
                     context.startActivity(i);
                 }
             });
