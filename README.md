@@ -21,8 +21,7 @@ Videology is an app that allows users to browse movies from the [The Movie Datab
 
 ### App Walkthough GIF
 
-<img src="https://imgur.com/zbT861j.gif" width=250><br>
-<img src="https://imgur.com/YwJicx7" width=250><br>
+<img src="https://imgur.com/YwJicx7.gif" width=250><br>
 
 ### Notes
 
